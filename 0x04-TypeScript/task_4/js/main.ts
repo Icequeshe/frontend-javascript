@@ -1,32 +1,32 @@
 import { Subjects } from './subjects/Cpp';
-import { Subjects as JavaSubjects } from './subjects/Java';
-import { Subjects as ReactSubjects } from './subjects/React';
+import { Subjects as SubjectsJava } from './subjects/Java';
+import { Subjects as SubjectsReact } from './subjects/React';
 
-// Create and export constants for each subject
-export const cpp = new Subjects.Cpp();
-export const java = new JavaSubjects.Java();
-export const react = new ReactSubjects.React();
+// Create constants for each subject
+const cpp = new Subjects.Cpp();
+const java = new SubjectsJava.Java();
+const react = new SubjectsReact.React();
 
-// Create and export a Teacher object with experienceTeachingC = 10
-export const cTeacher: Subjects.Teacher = {
+// Create a Teacher object with experienceTeachingC = 10
+const cTeacher: Subjects.Teacher = {
   firstName: 'John',
   lastName: 'Doe',
   experienceTeachingC: 10,
 };
 
-// C++ subject
+// Cpp
 console.log('C++');
 cpp.setTeacher(cTeacher);
 console.log(cpp.getRequirements());
 console.log(cpp.getAvailableTeacher());
 
-// Java subject
+// Java
 console.log('Java');
 java.setTeacher(cTeacher);
 console.log(java.getRequirements());
 console.log(java.getAvailableTeacher());
 
-// React subject
+// React
 console.log('React');
 react.setTeacher(cTeacher);
 console.log(react.getRequirements());
