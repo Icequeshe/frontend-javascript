@@ -3,12 +3,12 @@ import { Subjects as SubjectsJava } from './subjects/Java';
 import { Subjects as SubjectsReact } from './subjects/React';
 
 // Create constants for each subject
-const cpp = new Subjects.Cpp();
-const java = new SubjectsJava.Java();
-const react = new SubjectsReact.React();
+["const cpp = new Cpp()"]
+["const java = new Java()"]
+["const react = new React()"]
 
 // Create a Teacher object with experienceTeachingC = 10
-const cTeacher: Subjects.Teacher = {
+const["cTeacher: Teacher"]
   firstName: 'John',
   lastName: 'Doe',
   experienceTeachingC: 10,
